@@ -27,6 +27,7 @@ class timelapser:
         self.timelapse_monitor = timelapse_monitor
 
         self.is_typing = False
+        # time to stop capturing after a key press
         self.typing_time = 1
         self.now = time.time()
         self.future = self.now + self.typing_time
@@ -36,6 +37,8 @@ class timelapser:
         keyboard.on_press(self.on_keypress)
 
         fourcc = cv2.VideoWriter_fourcc(*"XVID")
+
+        # change the 60.0 here to adjust framerate
         self.out = cv2.VideoWriter(f"{self.name}.avi", fourcc, 60.0, (self.RESOLUTION))
 
     def __del__(self):
@@ -103,7 +106,9 @@ if __name__ == "__main__":
     speed = args.speed
     name = args.name
 
+    # adjust desired windows to capture in this array
     windows = ["WindowsTerminal.exe", "firefox.exe"]
+    # desired monitor to capture
     monitor = 1
 
     t = timelapser((1920, 1080), speed, name, windows, monitor)
