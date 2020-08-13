@@ -1,5 +1,6 @@
 # programming_timelapse.py
-I hate editing so I made this tool to auto timelapse my programming sessions and spit out an avi video. The script is pretty simple and the code is kinda gross in my opinion. I wrapped everything in a class for some reason because I think someone told me that was good practice at some point, but to me it's gross so I'll probably never do it again. If you feel like fixing my gross code or adding features please do so! As of right now the script only works on linux. For an Unix version the get_window_info() function would need to be rewritten. As far as I know the rest should be cross-platform.
+![Short example](https://i.imgur.com/UcFhmtp.gif)  
+I hate editing so I made this tool to auto timelapse my programming sessions and spit out an avi video. The example above really under sells how cool the resulting timelapse is due to the gif's length and compression. The script is pretty simple and the code is kinda gross in my opinion. I wrapped everything in a class for some reason because I think someone told me that was good practice at some point, but to me it's gross so I'll probably never do it again. If you feel like fixing my gross code or adding features please do so! As of right now the script only works on linux. For an Unix version the get_window_info() function would need to be rewritten. As far as I know the rest should be cross-platform.
 
 # Setup
 Before use a "few" dependencies must be installed. This command should install them all:  
