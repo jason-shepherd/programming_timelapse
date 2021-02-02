@@ -6,7 +6,7 @@ I hate editing so I made this tool to auto timelapse my programming sessions and
 # Setup
 Before use a "few" dependencies must be installed. This command should install them all:  
 ```pip install pywin32 keyboard numpy opencv-python pyautogui argparse```  
-I can't test if this works so if it doesn't please create and issue. Thanks!
+I can't test if this works so if it doesn't please create an issue. Thanks!
 
 # Use
 The script is simple to use. It will automagically timelapse the screen whenever the right window is on the right monitor. The windows are defined by their executable name. By default I have it set to capture WindowsTerminal.exe and firefox.exe, if you wish to capture other software simply remove the undesired executable names and add your own. The script also only timelapse when typing, the time spent capturing after typing can be adjusted in the script as well.  
