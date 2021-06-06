@@ -5,7 +5,7 @@ I hate editing so I made this tool to auto timelapse my programming sessions and
 
 # Setup
 Before use a "few" dependencies must be installed. This command should install them all:  
-```pip install pywin32 keyboard numpy opencv-python pyautogui argparse```  
+```pip install pywin32 keyboard numpy pillow opencv-python pyautogui argparse```  
 I can't test if this works so if it doesn't please create an issue. Thanks!
 
 # Use
