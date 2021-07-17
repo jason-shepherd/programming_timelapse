@@ -18,6 +18,11 @@ import pyautogui
 # used to parse the provided arguments
 import argparse
 
+# adjust desired windows to capture in this array
+windows = ["WindowsTerminal.exe", "firefox.exe"]
+# desired monitor to capture
+monitor = 2
+
 class timelapser:
     def __init__(self, resolution, speed, name, timelapse_windows, timelapse_monitor):
         self.RESOLUTION = resolution
@@ -49,6 +54,7 @@ class timelapser:
         try:
             self.now = time.time()
             info = self.get_window_info()
+            #print(info)
             window_name = info.get("window")
             monitor = info.get("monitor")
             if(window_name != "*.exe"):
@@ -105,11 +111,6 @@ if __name__ == "__main__":
 
     speed = args.speed
     name = args.name
-
-    # adjust desired windows to capture in this array
-    windows = ["WindowsTerminal.exe", "firefox.exe"]
-    # desired monitor to capture
-    monitor = 1
 
     t = timelapser((1920, 1080), speed, name, windows, monitor)
     while True:
